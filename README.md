@@ -2,7 +2,7 @@
 
 I have recently completed a data science course at General Assembly in London and for the past 5 weeks in the evenings I have been working on my final project. Cognisant of the rising tide of fake news / fake images and more recently deep fakes on the internet  I decided to create an image classifier that could spot whether pictures of faces had been photoshopped or not. 
 
-This project ended up bifurcating into two parts with part 1 concerning pixel-based semantic segmentation of images of faces and part 2 developing the classifier to detect fake faces. Part 1 is containted within this repo and part 2 can be found [here](https://github.com/Rees451/faces-fake-vs-real).
+This project ended up bifurcating into two parts with part 1 concerning pixel-based semantic segmentation of images of faces and part 2 developing the classifier to detect fake faces. Part 1 is contained within this repo and part 2 can be found [here](https://github.com/Rees451/faces-fake-vs-real).
 
 A more detailed discussion of the methodology can be found in [this blog post](https://edward-rees.com/2019/12/12/segmentation.html)
 
@@ -28,7 +28,7 @@ The purpose of this mini-project was to familiarise myself with working with ima
 3. Notebooks are kept [here](./notebooks)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Main Notebook](./notebooks/face_segmenation.ipynb)
+* [Main Notebook](./notebooks/face_segmentaion.ipynb)
 * [Blog Post](https://edward-rees.com/2019/12/12/segmentation.html)
 
 ## Contact
