@@ -2,7 +2,6 @@
 A set of functions to help with feature creation
 '''
 
-# from tqdm import tqdm_notebook as tqdm
 import numpy as np
 import matplotlib.pyplot as plt
 from skimage.feature import hog
@@ -67,10 +66,10 @@ class CreateFeatures(BaseEstimator, TransformerMixin):
                 img, pixels_per_cell=pixels_per_cell)
             out = np.c_[out, hog_features]
 
-
         return out
 
-    def _create_hog_features(self, imgs,
+    def _create_hog_features(self,
+                             imgs,
                              orientations=8,
                              pixels_per_cell=(20, 20),
                              gray_input=False,
@@ -138,6 +137,15 @@ class CreateFeatures(BaseEstimator, TransformerMixin):
             return fd_rr
 
     def _create_loc_features(self, array_shape, single_image=False):
+        """
+
+        Args:
+            x (type): Image to flip
+
+        Returns:
+            Augmented image
+        """
+
         if single_image:
             array_shape = (1, ) + array_shape
 
@@ -149,7 +157,17 @@ class CreateFeatures(BaseEstimator, TransformerMixin):
 
 
 def create_pixel_loc(shape):
-        row_ = np.array(range(0, shape[0] * shape[1]))
-        y = row_.reshape(shape[0], shape[1]).T.flatten() % shape[1]
-        x = row_ % shape[1]
-        return x / shape[1], y / shape[1]
+    """Creates two vectors, encoding the x, y positions of pixels in an image
+    of specified 'shape'
+
+    Args:
+        shape (tuple of length 2): Shape of image
+
+    Returns:
+        x (np.array): x coordinates (flattened)
+        y (np.array): y coordinates (flattened)
+    """
+    row_ = np.array(range(0, shape[0] * shape[1]))
+    y = row_.reshape(shape[0], shape[1]).T.flatten() % shape[1]
+    x = row_ % shape[1]
+    return x / shape[1], y / shape[1]

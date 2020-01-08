@@ -64,6 +64,16 @@ def segment_labeled_image(img,
 
 
 def run_kmeans(img, n_clusters):
+    """Cluster pixels in image to n distinct classes 
+
+    Args:
+        img (np.array): Grayscale Image to convert
+        n_clusters (int): Number of classes / clusters
+
+    Returns:
+        np.array of ints: with classes in range (1, n_clusters)
+    """
+    
 
     # create features
     make_flat = MakeFlat(img.shape)
