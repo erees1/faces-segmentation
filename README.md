@@ -28,7 +28,8 @@ The purpose of this mini-project was to familiarise myself with working with ima
 3. Notebooks are kept [here](./notebooks)
 
 ## Featured Notebooks/Analysis/Deliverables
-* [Main Notebook](./notebooks/face_segmentaion.ipynb)
+
+* [Main Notebook](./notebooks/face_segmentation.ipynb)
 * [Blog Post](https://edward-rees.com/2019/12/12/segmentation.html)
 
 ## Contact
