@@ -29,6 +29,8 @@ The purpose of this mini-project was to familiarise myself with working with ima
 
 ## Featured Notebooks/Analysis/Deliverables
 
+Analysis in this project was carried out in a jupyter notebook which documents each step. Please see the link below.
+
 * [Main Notebook](./notebooks/face_segmentation.ipynb)
 * [Blog Post](https://edward-rees.com/2019/12/12/segmentation.html)
 
