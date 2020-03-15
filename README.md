@@ -36,7 +36,7 @@ Analysis in this project was carried out in a jupyter notebook which documents e
 
 ## Contact
 
-* If you want to contact me - reach out to me on [LinkedIn](www.linkedin.com/in/rees)
+* If you want to contact me - reach out to me on [LinkedIn](https://www.linkedin.com/in/rees)
 
 ## References
 
